@@ -4,7 +4,7 @@ import java.awt.*;
 /**
  * Created by ht on 2016/2/5.
  */
-public class MessagePane extends JPanel {
+public class MessagePanel extends JPanel {
     private String message = "Welcome to Java";
 
     private int xCoordinate = 20;
@@ -14,11 +14,11 @@ public class MessagePane extends JPanel {
 
     private int interval = 10;
 
-    public MessagePane() throws HeadlessException {
+    public MessagePanel() throws HeadlessException {
 
     }
 
-    public MessagePane(String message) throws HeadlessException {
+    public MessagePanel(String message) throws HeadlessException {
         this.message = message;
     }
 
@@ -68,7 +68,7 @@ public class MessagePane extends JPanel {
     }
 
     protected void paintComponent(Graphics g) {
-        super.paintComponents(g);
+        super.paintComponent(g);
 
         if (centered) {
             FontMetrics fm = g.getFontMetrics();

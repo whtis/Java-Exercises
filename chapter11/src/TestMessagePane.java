@@ -6,10 +6,10 @@ import java.awt.*;
  */
 public class TestMessagePane extends JFrame {
     public TestMessagePane() throws HeadlessException {
-        MessagePane m1 = new MessagePane("Welcome to Java");
-        MessagePane m2 = new MessagePane("Java is fun");
-        MessagePane m3 = new MessagePane("Java is cool");
-        MessagePane m4 = new MessagePane("I love Java");
+        MessagePanel m1 = new MessagePanel("Welcome to Java");
+        MessagePanel m2 = new MessagePanel("Java is fun");
+        MessagePanel m3 = new MessagePanel("Java is cool");
+        MessagePanel m4 = new MessagePanel("I love Java");
         m1.setFont(new Font("SanSerif", Font.ITALIC, 20));
         m2.setFont(new Font("Courier", Font.BOLD, 20));
         m3.setFont(new Font("Times", Font.ITALIC, 20));

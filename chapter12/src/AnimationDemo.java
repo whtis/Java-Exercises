@@ -11,7 +11,7 @@ public class AnimationDemo extends JFrame {
         this.getContentPane().add(movingMessagePanel);
 
         //Create a timer for the listener p
-        Timer timer = new Timer(3000, movingMessagePanel);
+        Timer timer = new Timer(100, movingMessagePanel);
         timer.start();
     }
 

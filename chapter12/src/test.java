@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 
 /**
  * Created by ht on 2016/2/8.
@@ -9,7 +8,6 @@ public class test extends JFrame {
     public test() {
         JButton ok = new JButton("ok");
         this.getContentPane().add(ok);
-        this.getContentPane().add(new JOptionPane("hello"), BorderLayout.NORTH);
         returnWidth();
     }
 

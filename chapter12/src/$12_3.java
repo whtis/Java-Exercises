@@ -29,7 +29,6 @@ public class $12_3 extends JFrame implements ActionListener {
         repaint();
     }
 
-
     public static void main(String[] args) {
         $12_3 frame = new $12_3();
         frame.setTitle("Exercise 3");

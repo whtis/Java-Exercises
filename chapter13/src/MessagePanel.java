@@ -80,6 +80,7 @@ public class MessagePanel extends JPanel {
         }
 
         g.drawString(message, xCoordinate, yCoordinate);
+
     }
 
     public void moveLeft() {
@@ -106,4 +107,5 @@ public class MessagePanel extends JPanel {
     public Dimension getPreferredSize() {
         return new Dimension(200, 30);
     }
+
 }
