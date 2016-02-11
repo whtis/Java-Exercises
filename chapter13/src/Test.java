@@ -15,7 +15,7 @@ public class Test extends JFrame {
 
     public static void main(String[] args) {
         Test t = new Test();
-        t.pack();
+        t.setSize(300,400);
         t.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         t.setVisible(true);
     }
