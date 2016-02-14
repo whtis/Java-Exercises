@@ -1,17 +1,32 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
 
 /**
  * Created by ht on 2016/2/11.
  */
-public class Test extends JFrame {
-    MessagePanel messagePanel = new MessagePanel("hello");
+public class Test extends JFrame implements ActionListener {
+
+    JButton button = new JButton("create a new window");
+
+    JFrame aFrame = new JFrame("test");
 
     public Test() throws HeadlessException {
-        messagePanel.setBackground(Color.black);
+        this.getContentPane().add(button);
 
-        this.getContentPane().add(messagePanel);
+        aFrame.getContentPane().add(new JTextArea());
+        aFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        aFrame.setSize(100, 100);
+
+
+        button.addActionListener(this);
     }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        aFrame.setVisible(true);
+    }
+
 
     public static void main(String[] args) {
         Test t = new Test();

@@ -1,3 +1,5 @@
+package zujian;
+
 import javax.swing.*;
 import java.awt.*;
 
